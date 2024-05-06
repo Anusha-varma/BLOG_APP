@@ -1,0 +1,33 @@
+POST  http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"ram",
+    "password":"ram",
+    "email":"ram@gmail.com"
+}
+
+###
+POST  http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"ram",
+    "password":"ram"
+    
+}
+
+###reading articles of all users
+GET  http://localhost:4000/user-api/articles
+
+###article comment
+POST  http://localhost:4000/user-api/comment/1711169895
+Content-Type: application/json
+
+{
+    "username":"ram",
+    "comment":"Amazing content"
+    
+}
